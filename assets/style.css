@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;600;800&display=swap');
+:root{--v:#7B2FF7;--g:#E8A317;--k:#0a0a0a;--w:#fff;--gr:#8a8a8a;--line:#e6e6e6}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,system-ui,sans-serif;color:var(--k);background:var(--w);line-height:1.65}
+a{color:var(--v);text-decoration:none}a:hover{text-decoration:underline}
+img{max-width:100%;display:block}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:74px}
+.logo{font-family:Anton,'Bebas Neue',Impact,sans-serif;font-size:26px;letter-spacing:.42em;color:var(--k)}
+.logo:hover{text-decoration:none}
+nav ul{display:flex;gap:26px;list-style:none}
+nav a{color:var(--k);font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase}
+nav a.active,nav a:hover{color:var(--v);text-decoration:none}
+.burger{display:none;background:none;border:0;font-size:26px;cursor:pointer}
+.hero{background:var(--k);color:var(--w);min-height:min(82vh,760px);display:grid;place-items:center;text-align:center;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 75% 30%,rgba(123,47,247,.45),transparent 55%),radial-gradient(circle at 15% 85%,rgba(123,47,247,.18),transparent 50%)}
+.hero>*{position:relative}
+.hero h1{font-family:Anton,Impact,sans-serif;font-weight:400;font-size:clamp(54px,11vw,150px);letter-spacing:.32em;line-height:1;margin-right:-.32em}
+.hero p{color:#cfcfcf;letter-spacing:.3em;text-transform:uppercase;font-size:13px;margin:22px 0 34px}
+.btn{display:inline-block;padding:14px 30px;border:2px solid var(--v);background:var(--v);color:#fff;font-weight:700;font-size:13px;letter-spacing:.16em;text-transform:uppercase;transition:.2s}
+.btn:hover{background:transparent;color:var(--v);text-decoration:none}
+.hero .btn.ghost,.btn.ghost{background:transparent;color:inherit;border-color:currentColor}
+.btn.ghost:hover{border-color:var(--v);color:var(--v)}
+.tag{display:inline-block;background:var(--g);color:var(--k);font-size:11px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;padding:4px 10px}
+section{padding:96px 0}
+.dark{background:var(--k);color:#fff}
+.kicker{color:var(--v);font-weight:800;letter-spacing:.24em;text-transform:uppercase;font-size:12px;margin-bottom:12px}
+h2{font-family:Anton,Impact,sans-serif;font-weight:400;font-size:clamp(34px,5vw,56px);letter-spacing:.06em;text-transform:uppercase;line-height:1.1;margin-bottom:24px}
+h3{font-size:19px;margin-bottom:6px}
+.pagehead{padding:90px 0 50px;border-bottom:1px solid var(--line)}
+.pagehead h1{font-family:Anton,Impact,sans-serif;font-weight:400;font-size:clamp(48px,8vw,96px);letter-spacing:.12em;text-transform:uppercase;line-height:1}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.ph{background:repeating-linear-gradient(135deg,#111 0 14px,#171717 14px 28px);color:#9a9a9a;display:grid;place-items:center;text-align:center;font-size:12px;letter-spacing:.2em;text-transform:uppercase;aspect-ratio:1;position:relative;overflow:hidden}
+.ph.light{background:repeating-linear-gradient(135deg,#f3f3f3 0 14px,#ececec 14px 28px);color:#777}
+.ph.tall{aspect-ratio:4/5}.ph.wide{aspect-ratio:16/9}
+.ph:after{content:"";position:absolute;inset:0;background:var(--v);opacity:0;transition:.25s;mix-blend-mode:multiply}
+.ph:hover:after{opacity:.55}
+.card{border:1px solid var(--line);background:#fff;transition:.2s}
+.card:hover{border-color:var(--v);transform:translateY(-3px)}
+.card .body{padding:20px}
+.muted{color:var(--gr);font-size:14px}
+.draft{border:2px dashed var(--g);background:#fffaf0;padding:14px 18px;font-size:14px;margin-bottom:30px}
+.note{border-left:4px solid var(--v);background:#f6f1ff;padding:14px 18px;font-size:14px;margin:22px 0}
+.embed iframe{width:100%;border:0;border-radius:12px}
+.list{list-style:none;border-top:1px solid var(--line)}
+.list li{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 0;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.date{font-family:Anton,Impact,sans-serif;font-size:24px;letter-spacing:.05em;min-width:150px}
+form{display:grid;gap:14px;max-width:560px}
+input,textarea,select{font:inherit;padding:14px;border:1px solid #cfcfcf;background:#fff;width:100%}
+input:focus,textarea:focus{outline:2px solid var(--v);border-color:var(--v)}
+.news{display:flex;gap:10px;max-width:520px;margin:0 auto}
+.news input{background:#111;border-color:#333;color:#fff}
+.socials{display:flex;gap:18px;flex-wrap:wrap}
+.socials a{font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase}
+footer{background:var(--k);color:#aaa;padding:56px 0 34px;font-size:13px}
+footer .logo{color:#fff;font-size:22px}
+footer .row{display:flex;justify-content:space-between;align-items:flex-start;gap:30px;flex-wrap:wrap;margin-bottom:28px}
+footer a{color:#ddd}footer a:hover{color:var(--v)}
+.bio p{font-size:18px;margin-bottom:20px;max-width:760px}
+.ph-txt{background:#f0e9ff;color:#4b1aa8;padding:0 4px;border-radius:3px}
+@media(max-width:860px){
+ nav ul{display:none;position:absolute;top:74px;left:0;right:0;background:#fff;flex-direction:column;gap:0;border-bottom:1px solid var(--line)}
+ nav ul.open{display:flex}nav li a{display:block;padding:16px 24px}
+ .burger{display:block}.logo{font-size:20px;letter-spacing:.32em}
+ .grid2,.grid3{grid-template-columns:1fr;gap:32px}.grid4{grid-template-columns:1fr 1fr}
+ section{padding:64px 0}.hero{min-height:560px}.hero h1{font-size:11vw !important;letter-spacing:.16em;margin-right:-.16em;white-space:nowrap}.news{flex-direction:column}
+}
+.list li>div{flex:1}
+.fig{position:relative;overflow:hidden;background:#111}
+.fig img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.fig:after{content:"";position:absolute;inset:0;background:var(--v);opacity:0;transition:.25s;mix-blend-mode:multiply;pointer-events:none}
+.fig:hover:after{opacity:.5}.fig:hover img{transform:scale(1.03)}
+.sq{aspect-ratio:1}.tl{aspect-ratio:4/5}.wd{aspect-ratio:16/9}
+.hero.photo{background:linear-gradient(rgba(5,0,15,.62),rgba(20,5,45,.72)),url(photos/02-bw-classical-guitar-window.jpg) center 35%/cover}
+.thumb{width:120px;height:90px;object-fit:cover;flex:none}
+.grid6{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
+@media(max-width:860px){.grid6{grid-template-columns:repeat(3,1fr)}.thumb{width:84px;height:64px}}
