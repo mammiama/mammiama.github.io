@@ -96,3 +96,7 @@ footer a{color:#ddd}footer a:hover{color:var(--v)}
 .track-dur{color:#777;font-variant-numeric:tabular-nums}
 .tag-new{display:inline-block;background:#E8A317;color:#000;font-size:.68em;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:2px 7px;margin-left:6px;vertical-align:middle}
 @media(max-width:860px){.track{grid-template-columns:1fr auto;gap:10px}.track audio{grid-column:1/-1}}
+.track:has(.btn-dl){grid-template-columns:1fr auto minmax(240px,340px) auto}
+.btn-dl{display:inline-block;background:#7B2FF7;color:#fff;text-decoration:none;font-weight:700;font-size:.75em;letter-spacing:.12em;text-transform:uppercase;padding:12px 18px;border-bottom:3px solid #E8A317;white-space:nowrap}
+.btn-dl:hover{background:#5d1fd0}
+@media(max-width:860px){.track:has(.btn-dl){grid-template-columns:1fr auto}.btn-dl{grid-column:1/-1;text-align:center}}
