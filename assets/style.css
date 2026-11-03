@@ -90,3 +90,9 @@ footer a{color:#ddd}footer a:hover{color:var(--v)}
 .short-wrap{max-width:340px}
 .grid5{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
 @media(max-width:860px){.grid5{grid-template-columns:1fr 1fr}.grid5>:last-child{grid-column:1/-1;width:calc(50% - 8px);justify-self:center}}
+.tracks{list-style:none;padding:0;margin:24px 0 0;border-top:1px solid #e5e5e5}
+.track{display:grid;grid-template-columns:1fr auto minmax(260px,360px);gap:20px;align-items:center;padding:18px 0;border-bottom:1px solid #e5e5e5}
+.track audio{width:100%;accent-color:#7B2FF7}
+.track-dur{color:#777;font-variant-numeric:tabular-nums}
+.tag-new{display:inline-block;background:#E8A317;color:#000;font-size:.68em;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:2px 7px;margin-left:6px;vertical-align:middle}
+@media(max-width:860px){.track{grid-template-columns:1fr auto;gap:10px}.track audio{grid-column:1/-1}}
